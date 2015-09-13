@@ -1,0 +1,15 @@
+<table class="table" id="hosts">
+  <thead>
+    <tr>
+      <th>{{input type="checkbox" id="toggle-all" checked=allAreDone}}</th>
+      <th>#</th>
+      <th>color</th>
+      <th>title</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each hosts as |host|}}
+    {{host-item host=host}}
+  {{/each}}
+  </tbody>
+</table>
