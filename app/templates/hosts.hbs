@@ -1,3 +1,7 @@
 <section id="main">
-  {{outlet}}
+  {{#each pagedContent}}
+    {{outlet}}
+  {{/each}}
+
+  {{page-numbers content=pagedContent}}
 </section>
